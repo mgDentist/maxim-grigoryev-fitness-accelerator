@@ -14,35 +14,40 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <img class="header__logo" src="img/svg/logo-supergym.svg" alt="Логотип спортзала Supergym.">
+        <!-- <svg class="header__logo">
+          <use href="../img/sprite.svh#logo-supergym"></use>
+        </svg> -->
         <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
       </div>
     </header>
     <main>
       <section class="main__section hero">
-        <h1 class="visually-hidden">Спортзал Supergym</h1>
-        <div class="container">
-          <p class="hero__left-text">
-            Тренажёрный зал<br> Групповые занятия<br> Кардио-зона
-          </p>
-          <p class="hero__right-text">
-          <p class="hero__inner-text hero__inner-text--thin">Омск</p>
-          <p class="hero__inner-text hero__inner-text--bold">Фитнес центр</p>
-          </p>
-          <button class="hero__buton" type="button">Купить абонемент</button>
+        <div class="container hero__container">
+          <h1 class="visually-hidden">Спортзал Supergym</h1>
+          <div class="hero__left-text-wrapper">
+            <p class="hero__left-text">
+              Тренажёрный&nbsp;зал<br> Групповые&nbsp;занятия<br> Кардио-зона
+            </p>
+            <div class="hero__right-text">
+              <p class="hero__inner-text hero__inner-text--city">Омск</p>
+              <p class="hero__inner-text hero__inner-text--gym">Фитнес центр</p>
+            </div>
+            <button class="hero__button btn" type="button">Купить&nbsp;абонемент</button>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
+            <img class="index-list__img" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" width="744"
+              height="418"
+              alt="Главное изображение проекта Fitness. Спортивный мужчина в синей футболке с эмблемой супермена на груди." />
+          </picture>
         </div>
-        <picture>
-          <source type="image/webp" media="(min-width: 1366px)"
-            srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
-          <source type="image/jpeg" media="(min-width: 1366px)"
-            srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
-          <img class="index-list__img" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" width="744"
-            height="418"
-            alt="Главное изображение проекта Fitness. Спортивный мужчина в синей футболке с эмблемой супермена на груди." />
-        </picture>
       </section>
       <!-- <section class="intro">
         <div class="container">
@@ -55,7 +60,7 @@
         </div>
       </section> -->
 
-      <section class="main__section gym">
+      <!-- <section class="main__section gym">
         <div class="gym__text-wrapper">
           <h2 class="gym__title">Тренажерный зал</h2>
           <p class="gym__main-description">
@@ -545,7 +550,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <h2 class="footer__logo-text">Supergym</h2>
+        <img class="footer__logo" src="img/svg/logo-supergym-footer.svg" alt="Логотип спортзала Supergym.">
         <nav class="footer__nav">
           <a class="footer__link" href="#">
             Услуги
@@ -575,7 +580,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
   </div>
 
   <!-- Модалки -->

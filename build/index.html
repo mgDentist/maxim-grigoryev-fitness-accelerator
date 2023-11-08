@@ -59,23 +59,23 @@
       </section> -->
 
       <section class="main__section gym">
-        <div class="container hero__container">
+        <div class="container gym__container">
           <div class="gym__text-wrapper">
             <h2 class="gym__title">Тренажерный зал</h2>
             <p class="gym__main-description">
               Просторный зал площадью 900 кв/м
             </p>
             <p class="gym__additive-description">
-              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и&nbsp;здоровья.
               Тренажерный
-              зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.
             </p>
             <p class="gym__additive-description gym__additive-description--no-mobile">
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий.
             </p>
           </div>
-          <div class="gym__picture-wrapper">
+          <div class="gym__media-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1366px)"
                 srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="401">
@@ -91,11 +91,16 @@
                 height="313" alt="Cпортзал и спортивный инвентарь." />
             </picture>
             <div class="gym__video-wrapper">
-              <video class="gym__video" controls playsinline>
-                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" media="(min-width: 1366px)"
-                  type="video/mp4" poster="img/video-poster-desktop.jpg" />
+              <video class="gym__video" controls playsinline poster="img/video-poster-desktop.jpg" >
+                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" width="364" height="228" media="(min-width: 1366px)"
+                  type="video/mp4" />
               </video>
-              <button class="gym__button" type="button"></button>
+              <button class="gym__button btn" type="button">
+                <!-- <svg class="gym__svg-button" width="100" height="100" src="img/svg/player-button.svg"></svg> -->
+                <svg class="gym__svg-button" width="100" height="100">
+                  <use href="img/sprite.svg#player-button"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>

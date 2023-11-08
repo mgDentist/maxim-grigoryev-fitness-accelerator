@@ -15,10 +15,8 @@
   <div class="wrapper">
     <header class="header">
       <div class="container header__container">
-        <img class="header__logo" src="img/svg/logo-supergym.svg" alt="Логотип спортзала Supergym.">
-        <!-- <svg class="header__logo">
-          <use href="../img/sprite.svh#logo-supergym"></use>
-        </svg> -->
+        <img class="header__logo" src="img/svg/logo-supergym.svg" width="120" height="26"
+          alt="Логотип спортзала Supergym.">
         <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
       </div>
     </header>
@@ -60,47 +58,50 @@
         </div>
       </section> -->
 
-      <!-- <section class="main__section gym">
-        <div class="gym__text-wrapper">
-          <h2 class="gym__title">Тренажерный зал</h2>
-          <p class="gym__main-description">
-            Просторный зал площадью 900 кв/м
-          </p>
-          <p class="gym__additive-description">
-            Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-            Тренажерный
-            зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-          </p>
-          <p class="gym__additive-description gym__additive-description--no-mobile">
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий.
-          </p>
+      <section class="main__section gym">
+        <div class="container hero__container">
+          <div class="gym__text-wrapper">
+            <h2 class="gym__title">Тренажерный зал</h2>
+            <p class="gym__main-description">
+              Просторный зал площадью 900 кв/м
+            </p>
+            <p class="gym__additive-description">
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный
+              зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="gym__additive-description gym__additive-description--no-mobile">
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="gym__picture-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="401">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
+              <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" width="320"
+                height="313">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x" width="846" height="846">
+              <source type="image/jpeg" media="(min-width: 768px)"
+                srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="660" height="401">
+              <img class="index-list__img" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x" width="320"
+                height="313" alt="Cпортзал и спортивный инвентарь." />
+            </picture>
+            <div class="gym__video-wrapper">
+              <video class="gym__video" controls playsinline>
+                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" media="(min-width: 1366px)"
+                  type="video/mp4" poster="img/video-poster-desktop.jpg" />
+              </video>
+              <button class="gym__button" type="button"></button>
+            </div>
+          </div>
         </div>
-        <div class="gym__picture-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="401">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" width="678" height="345">
-            <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" width="320"
-              height="313">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x" width="846" height="846">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="660" height="401">
-            <img class="index-list__img" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x" width="320"
-              height="313" alt="Cпортзал и спортивный инвентарь." />
-          </picture>
-        </div>
-        <div class="gym__video-wrapper">
-          <video class="gym__video" controls playsinline>
-            <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" media="(min-width: 1366px)"
-              type="video/mp4" poster="img/video-poster-desktop.jpg" />
-          </video>
-          <button class="gym__button" type="button"></button>
-        </div>
+
       </section>
-      <section class="main__section abonements">
+      <!-- <section class="main__section abonements">
         <h2 class="abonements__title">Абонементы</h2>
         <ul class="abonements__list months">
           <li class="months__item">1 месяц</li>
@@ -127,8 +128,8 @@
             <a class="cards__button" href="#">Купить абонемент</a>
           </li>
         </ul>
-      </section>
-      <section class="main__section jury">
+      </section> -->
+      <!-- <section class="main__section jury">
         <div class="jury__card">
           <div class="jury__left-part">
             <div class="jury__text jury-text">
@@ -342,8 +343,8 @@
             <svg></svg>
           </button>
         </div>
-      </section>
-      <section class="main__section features">
+      </section> -->
+      <!-- <section class="main__section features">
         <h2 class="features__title">Наши преимущества</h2>
         <ul class="features__list">
           <li class="features__item features-card">
@@ -396,8 +397,8 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="main__section promo">
+      </section> -->
+      <!-- <section class="main__section promo">
         <h2 class="promo__main-title">Акции</h2>
         <div class="promo__wrapper">
           <div class="promo__info">
@@ -436,8 +437,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="main__section faq">
+      </section> -->
+      <!-- <section class="main__section faq">
         <h2 class="faq__main-title">Вопросы и ответы</h2>
         <div class="faq__menu-buttons">
           <button class="faq__menu-button" type="button">Центр</button>
@@ -465,8 +466,8 @@
             <p class="faq__description"></p>
           </li>
         </ul>
-      </section>
-      <section class="main__section feedback">
+      </section> -->
+      <!-- <section class="main__section feedback">
         <h2 class="feedback__main-title">Отзывы</h2>
         <ul class="feedback__list">
           <li class="feedback__item">
@@ -508,9 +509,9 @@
           <button class="feedback__button feedback__button--prev" type="button"></button>
           <button class="feedback__button feedback__button--next" type="button"></button>
         </ul>
-      </section>
+      </section> -->
 
-      <section class="main__section free-visit">
+      <!-- <section class="main__section free-visit">
         <h2 class="free-visit__main-title"></h2>
         <form class="free-visit__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="free-visit__fieldset">
@@ -524,9 +525,9 @@
           </fieldset>
           <button class="free-visit__button" type="submit">Отправить</button>
         </form>
-      </section>
+      </section> -->
 
-      <section class="main__section contacts">
+      <!-- <section class="main__section contacts">
         <h2 class="contacts__main-title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -546,9 +547,9 @@
             <p class="contacts__description">omsk@supergym.ru</p>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <img class="footer__logo" src="img/svg/logo-supergym-footer.svg" alt="Логотип спортзала Supergym.">
         <nav class="footer__nav">

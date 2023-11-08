@@ -10,6 +10,7 @@
 
 @import "variables";
 @import "mixins";
+@import "global/functions.scss";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
@@ -26,6 +27,7 @@
 
 @import "blocks/header.scss";
 @import "blocks/hero.scss";
+@import "blocks/gym.scss";
 
 // ---------------------------------
 

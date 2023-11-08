@@ -1,5 +1,5 @@
 .header {
-  padding: 30px 0;
+  padding: size(30px) 0;
   background: linear-gradient(to right, #003EB7, #ED0233);
 
   @include vp-1365 {
@@ -17,7 +17,9 @@
 }
 
 .header__logo {
-  margin-right: 10px;
+  width: size(120px);
+  height: size(26px);
+  margin-right: size(10px);
 
   @include vp-1365 {
     width: 111px;
@@ -30,10 +32,10 @@
 
 .header__tel {
   color: $color-default-white;
-  font-size: 26px;
+  font-size: size(26px);
   font-weight: 700;
-  line-height: 26px;
-  letter-spacing: -0.7px;
+  line-height: size(26px);
+  letter-spacing: size(-0.7px);
 
   @include vp-1365 {
     font-size: 24px;

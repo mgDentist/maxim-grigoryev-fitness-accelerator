@@ -87,13 +87,13 @@
                 srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x" width="846" height="846">
               <source type="image/jpeg" media="(min-width: 768px)"
                 srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x" width="660" height="401">
-              <img class="index-list__img" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x" width="320"
+              <img class="gym__img" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x" width="320"
                 height="313" alt="Cпортзал и спортивный инвентарь." />
             </picture>
             <div class="gym__video-wrapper">
-              <video class="gym__video" controls playsinline poster="img/video-poster-desktop.jpg" >
-                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" width="364" height="228" media="(min-width: 1366px)"
-                  type="video/mp4" />
+              <video class="gym__video" controls playsinline poster="img/video-poster-desktop.jpg">
+                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" width="364" height="228"
+                  media="(min-width: 1366px)" type="video/mp4" />
               </video>
               <button class="gym__button btn" type="button">
                 <!-- <svg class="gym__svg-button" width="100" height="100" src="img/svg/player-button.svg"></svg> -->
@@ -104,35 +104,58 @@
             </div>
           </div>
         </div>
-
       </section>
+
       <!-- <section class="main__section abonements">
-        <h2 class="abonements__title">Абонементы</h2>
-        <ul class="abonements__list months">
-          <li class="months__item">1 месяц</li>
-          <li class="months__item">6 месяцев</li>
-          <li class="months__item">12 месяцев</li>
-        </ul>
-        <ul class="abonements__list cards">
-          <li class="cards__item">
-            <h2 class="cards__title">С тренером</h2>
-            <p class="cards__description">12 занятий</p>
-            <p class="cards__price">5000<span>&#8381;</span></p>
-            <a class="cards__button" href="#">Купить абонемент</a>
-          </li>
-          <li class="cards__item">
-            <h2 class="cards__title">Дневной</h2>
-            <p class="cards__description">с 8:00 до 17:00 </p>
-            <p class="cards__price">1700<span>&#8381;</span></p>
-            <a class="cards__button" href="#">Купить абонемент</a>
-          </li>
-          <li class="cards__item">
-            <h2 class="cards__title">Полный день</h2>
-            <p class="cards__description">с 8:00 до 22:00 </p>
-            <p class="cards__price">2700<span>&#8381;</span></p>
-            <a class="cards__button" href="#">Купить абонемент</a>
-          </li>
-        </ul>
+        <div class="container abonements__container">
+          <h2 class="abonements__title">Абонементы</h2>
+          <ul class="abonements__list months">
+            <li class="months__item months__item--active">1 месяц</li>
+            <li class="months__item">6 месяцев</li>
+            <li class="months__item">12 месяцев</li>
+          </ul>
+          <ul class="abonements__list cards">
+            <li class="cards__item">
+              <h2 class="cards__title">С тренером</h2>
+              <p class="cards__description">12 занятий</p>
+              <p class="cards__price">
+                <span class="cards__rouble">5000</span>
+                <span class="cards__shadow">5000</span>
+
+                <svg class="cards__rouble-icon" width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </p>
+              <a class="cards__button btn" href="#">Купить абонемент</a>
+            </li>
+            <li class="cards__item cards__item--colored">
+              <h2 class="cards__title">Дневной</h2>
+              <p class="cards__description">с 8:00 до 17:00 </p>
+              <p class="cards__price">
+                <span class="cards__rouble">1700</span>
+                <span class="cards__shadow">1700</span>
+
+                <svg class="cards__rouble-icon" width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </p>
+              <a class="cards__button cards__button--colored btn" href="#">Купить абонемент</a>
+            </li>
+            <li class="cards__item">
+              <h2 class="cards__title">Полный день</h2>
+              <p class="cards__description">с 8:00 до 22:00 </p>
+              <p class="cards__price">
+                <span class="cards__rouble">2700</span>
+                <span class="cards__shadow">2700</span>
+
+                <svg class="cards__rouble-icon" width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </p>
+              <a class="cards__button btn" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
       </section> -->
       <!-- <section class="main__section jury">
         <div class="jury__card">

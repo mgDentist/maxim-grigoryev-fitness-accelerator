@@ -160,7 +160,9 @@
           <source type="image/webp" media="(min-width: 1366px)"
             srcset="img/abonements-background-desktop.webp 1x, img/abonements-background-desktop@2x.webp 2x" width="287"
             height="494">
-          <source type="image/webp" srcset="img/abonements-background-tablet.webp 1x, img/abonements-background-tablet@2x.webp 2x" width="327" height="423">
+          <source type="image/webp"
+            srcset="img/abonements-background-tablet.webp 1x, img/abonements-background-tablet@2x.webp 2x" width="327"
+            height="423">
           <source type="image/jpeg" media="(min-width: 1366px)"
             srcset="img/abonements-background-desktop.png 1x, img/abonements-background-desktop@2x.jpg 2x" width="287"
             height="494">
@@ -169,221 +171,230 @@
             alt="Cпортивный инвентарь. Фоновое изображение." />
         </picture>
       </section>
-      <!-- <section class="main__section jury">
-        <div class="jury__card">
-          <div class="jury__left-part">
-            <div class="jury__text jury-text">
-              <h3 class="jury-text__title">Super games</h3>
-              <div class="jury-text__wrapper">
-                <div class="jury-text__info">
-                  <div class="jury-text__date">
-                    <h4 class="jury-text__inner-title">Дата</h4>
-                    <p class="jury-text__inner-description">
-                      <span class="jury-text__span">7</span>Марта 2019
-                    </p>
+
+      <section class="main__section jury">
+        <div class="container jury__container">
+          <div class="jury__card promo">
+            <div class="promo__left-part">
+              <div class="promo__textblock">
+                <h3 class="promo__title">Super games</h3>
+                <div class="promo__info">
+                  <div class="promo__date">
+                    <h4 class="promo__inner-title">Дата</h4>
+                    <div class="promo__inner-description">
+                      <div class="promo__span-number">7</div>
+                      <div class="promo__inner-wrapper">
+                        <span class="promo__span promo__span--month">Марта</span>
+                        <span class="promo__span promo__span--date">2019</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="jury-text__time">
-                    <h4 class="jury-text__inner-title">Время</h4>
-                    <p class="jury-text__inner-description">
-                      <span class="jury-text__span">12:00</span>
+                  <div class="promo__time">
+                    <h4 class="promo__inner-title">Время</h4>
+                    <p class="promo__inner-description">
+                      <span class="promo__span-number">12:00</span>
                     </p>
                   </div>
                 </div>
               </div>
+              <p class="promo__description">Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="promo__button btn" href="#">Заполнить заявку</a>
             </div>
-            <p class="jury__description">Ежегодные соревнования по CrossFit</p>
-            <a class="jury__button" href="#">Заполнить заявку</a>
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/jury-desktop.webp 1x, img/jury-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/jury-tablet.webp 1x, img/jury-tablet@2x.webp 2x" width="386" height="324">
+              <source type="image/jpeg" media="(min-width: 320px)"
+                srcset="img/jury-mobile.webp 1x, img/jury-mobile@2x.webp 2x" width="846" height="846">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                srcset="img/jury-desktop.jpg 1x, img/jury-desktop@2x.jpg 2x" width="660" height="500">
+              <source type="image/jpeg" media="(min-width: 768px)"
+                srcset="img/jury-tablet.jpg 1x, img/jury-tablet@2x.jpg 2x" width="386" height="324"
+                alt="Изображение спортзала и спортивного инвентаря." />
+              <img class="promo__image" src="img/jury-mobile.jpg" srcset="img/jury-mobile@2x.jpg 2x" width="290"
+                height="292"
+                alt="Мужчина в очень хорошей физической форме ударяет по полу правой рукой в горизонтальной стойке и поднимается от удара столб пыли из талька." />
+            </picture>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/jury-desktop.webp 1x, img/jury-desktop@2x.webp 2x" width="660" height="500">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/jury-tablet.webp 1x, img/jury-tablet@2x.webp 2x" width="386" height="324">
-            <source type="image/jpeg" media="(min-width: 320px)"
-              srcset="img/jury-mobile.webp 1x, img/jury-mobile@2x.webp 2x" width="846" height="846">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/jury-desktop.jpg 1x, img/jury-desktop@2x.jpg 2x" width="660" height="500">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/jury-tablet.jpg 1x, img/jury-tablet@2x.jpg 2x" width="386" height="324"
-              alt="Изображение спортзала и спортивного инвентаря." />
-            <img class="" src="img/jury-mobile.jpg" srcset="img/jury-mobile@2x.jpg 2x" width="290" height="292"
-              alt="Мужчина в очень хорошей физической форме ударяет по полу правой рукой в горизонтальной стойке и поднимается от удара столб пыли из талька." />
-          </picture>
+          <h2 class="jury__title">Жюри</h2>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/anna-desktop.webp 1x, img/jury/anna-desktop@2x.webp 2x" width="260" height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/anna-desktop.jpg 1x, img/jury/anna-desktop@2x.jpg 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
+                    alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Анна Павлова</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/aleksei-desktop.webp 1x, img/jury/aleksei-desktop@2x.webp 2x" width="260"
+                    height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/aleksei-desktop.jpg 1x, img/jury/aleksei-desktop@2x.jpg 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
+                    height="324" alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Алексей Лавров</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/alexander-desktop.webp 1x, img/jury/alexander-desktop@2x.webp 2x" width="260"
+                    height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/alexander-desktop.jpg 1x, img/jury/alexander-desktop@2x.jpg 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
+                    height="324" alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Александр Пашков</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/maria-desktop.webp 1x, img/jury/maria-desktop@2x.webp 2x" width="260" height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/maria-desktop.jpg 1x, img/jury/maria-desktop@2x.jpg 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
+                    alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Мария Кетова</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/anna-desktop.webp 1x, img/jury/anna-desktop@2x.webp 2x" width="260" height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/anna-desktop.jpg 1x, img/jury/anna-desktop@2x.jpg 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
+                    alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Анна Павлова</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/aleksei-desktop.webp 1x, img/jury/aleksei-desktop@2x.webp 2x" width="260"
+                    height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/aleksei-desktop.jpg 1x, img/jury/aleksei-desktop@2x.jpg 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
+                    height="324" alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Алексей Лавров</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/alexander-desktop.webp 1x, img/jury/alexander-desktop@2x.webp 2x" width="260"
+                    height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/alexander-desktop.jpg 1x, img/jury/alexander-desktop@2x.jpg 2x" width="268"
+                    height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
+                    height="324" alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Александр Пашков</p>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/jury/maria-desktop.webp 1x, img/jury/maria-desktop@2x.webp 2x" width="260" height="294">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
+                    height="274">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                    srcset="img/jury/maria-desktop.jpg 1x, img/jury/maria-desktop@2x.jpg 2x" width="268" height="294">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
+                    alt="Изображение спортзала и спортивного инвентаря." />
+                  <img class="slider__image" src="img/jury/alexander-mobile.jpg"
+                    srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
+                </picture>
+                <p class="slider__text">Мария Кетова</p>
+              </li>
+            </ul>
+            <button class="slider__button slider__button--prev" type="button">
+              <svg></svg>
+            </button>
+            <button class="slider__button slider__button--next" type="button">
+              <svg></svg>
+            </button>
+          </div>
         </div>
-        <h2 class="jury__title">Жюри</h2>
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/anna-desktop.webp 1x, img/jury/anna-desktop@2x.webp 2x" width="260" height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/anna-desktop.jpg 1x, img/jury/anna-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
-                  alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Анна Павлова</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/aleksei-desktop.webp 1x, img/jury/aleksei-desktop@2x.webp 2x" width="260"
-                  height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/aleksei-desktop.jpg 1x, img/jury/aleksei-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
-                  height="324" alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Алексей Лавров</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/alexander-desktop.webp 1x, img/jury/alexander-desktop@2x.webp 2x" width="260"
-                  height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/alexander-desktop.jpg 1x, img/jury/alexander-desktop@2x.jpg 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
-                  height="324" alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Александр Пашков</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/maria-desktop.webp 1x, img/jury/maria-desktop@2x.webp 2x" width="260" height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/maria-desktop.jpg 1x, img/jury/maria-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
-                  alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Мария Кетова</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/anna-desktop.webp 1x, img/jury/anna-desktop@2x.webp 2x" width="260" height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/anna-desktop.jpg 1x, img/jury/anna-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
-                  alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Анна Павлова</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/aleksei-desktop.webp 1x, img/jury/aleksei-desktop@2x.webp 2x" width="260"
-                  height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/aleksei-desktop.jpg 1x, img/jury/aleksei-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
-                  height="324" alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Алексей Лавров</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/alexander-desktop.webp 1x, img/jury/alexander-desktop@2x.webp 2x" width="260"
-                  height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.webp 1x, img/jury/alexander-tablet@2x.webp 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/alexander-desktop.jpg 1x, img/jury/alexander-desktop@2x.jpg 2x" width="268"
-                  height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/alexander-tablet.jpg 1x, img/jury/alexander-tablet@2x.jpg 2x" width="386"
-                  height="324" alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Александр Пашков</p>
-            </li>
-            <li class="slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1366px)"
-                  srcset="img/jury/maria-desktop.webp 1x, img/jury/maria-desktop@2x.webp 2x" width="260" height="294">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.webp 1x, img/jury/maria-tablet@2x.webp 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 320px)"
-                  srcset="img/jury/alexander-mobile.webp 1x, img/jury/alexander-mobile@2x.webp 2x" width="226"
-                  height="274">
-                <source type="image/jpeg" media="(min-width: 1366px)"
-                  srcset="img/jury/maria-desktop.jpg 1x, img/jury/maria-desktop@2x.jpg 2x" width="268" height="294">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/jury/maria-tablet.jpg 1x, img/jury/maria-tablet@2x.jpg 2x" width="386" height="324"
-                  alt="Изображение спортзала и спортивного инвентаря." />
-                <img class="slider__image" src="img/jury/alexander-mobile.jpg"
-                  srcset="img/jury/alexander-mobile@2x.jpg 2x" width="226" height="274" alt="Участник жюри." />
-              </picture>
-              <p class="slider__text">Мария Кетова</p>
-            </li>
-          </ul>
-          <button class="slider__button slider__button--prev" type="button">
-            <svg></svg>
-          </button>
-          <button class="slider__button slider__button--next" type="button">
-            <svg></svg>
-          </button>
-        </div>
-      </section> -->
+      </section>
+
       <!-- <section class="main__section features">
         <h2 class="features__title">Наши преимущества</h2>
         <ul class="features__list">

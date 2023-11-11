@@ -16,10 +16,11 @@
 
 @font-face {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-300.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+  url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -27,15 +28,17 @@
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+  url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+  url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
 
 

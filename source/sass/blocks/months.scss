@@ -1,12 +1,26 @@
 .months {
   position: relative;
-  padding-top: 35px;
+  padding-top: 34px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
   font-size: 20px;
   line-height: 20px;
+
+  @include vp-1365 {
+    padding-top: 37px;
+    gap: 55px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    padding-top: 23px;
+    column-gap: 46px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 
   &::after {
     content: "";
@@ -21,32 +35,16 @@
       bottom: -17px;
     }
   }
-
-  @include vp-1365 {
-    padding-top: 37px;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  @include vp-767 {
-    padding-top: 23px;
-    column-gap: 45px;
-    font-size: 16px;
-    line-height: 16px;
-  }
 }
 
 .months__item {
   position: relative;
   color: $color-soft-blue;
-  letter-spacing: -1px;
 
   @include vp-1365 {
-    letter-spacing: -0.5px;
   }
 
   @include vp-767 {
-    letter-spacing: -0.8px;
   }
 
   &--active {

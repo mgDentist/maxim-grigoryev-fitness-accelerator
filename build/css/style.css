@@ -1505,6 +1505,7 @@ ul {
     margin-left: 0;
     padding: 20px 32px 19px 31px;
     font-weight: 400;
+    line-height: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -1527,16 +1528,16 @@ ul {
 }
 
 .gym {
-  padding: 120px 0 240px;
+  padding: 120px 0 235px;
 }
 @media (max-width: 1365px) {
   .gym {
-    padding: 100px 0 182px;
+    padding: 100px 0 183px;
   }
 }
 @media (max-width: 767px) {
   .gym {
-    padding: 71px 0;
+    padding: 71px 0 70px;
   }
 }
 
@@ -1584,7 +1585,7 @@ ul {
 }
 
 .gym__title {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -1593,7 +1594,7 @@ ul {
 }
 @media (max-width: 1365px) {
   .gym__title {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
@@ -1601,7 +1602,7 @@ ul {
 }
 @media (max-width: 767px) {
   .gym__title {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -1613,15 +1614,13 @@ ul {
   margin-bottom: 95px;
   font-size: 22px;
   line-height: 22px;
-  letter-spacing: -1.11px;
 }
 @media (max-width: 1365px) {
   .gym__main-description {
-    padding-right: 8px;
+    padding-right: 4px;
     margin-bottom: 33px;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: -1px;
   }
 }
 @media (max-width: 767px) {
@@ -1638,7 +1637,6 @@ ul {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: -1.1px;
 }
 .gym__additive-description:not(:last-child) {
   margin-bottom: 8px;
@@ -1654,11 +1652,7 @@ ul {
     font-weight: 300;
     line-height: 22px;
     text-align: start;
-    letter-spacing: -1px;
   }
-}
-.gym__additive-description--no-mobile {
-  letter-spacing: -1px;
 }
 @media (max-width: 1365px) {
   .gym__additive-description--no-mobile {

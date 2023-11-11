@@ -1,0 +1,28 @@
+.slider {
+  padding-top: 45px;
+}
+
+.slider__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.slider__item {
+  position: relative;
+
+  &--none {
+    display: none;
+  }
+}
+
+.slider__text {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-default-white;
+  white-space: nowrap;
+}

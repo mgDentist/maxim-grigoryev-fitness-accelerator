@@ -1,28 +1,113 @@
 .slider {
+  position: relative;
   padding-top: 45px;
+
+  @include vp-1365 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 41px;
+  }
 }
 
 .slider__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+
+  @include vp-1365 {
+    gap: 32px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+  }
 }
 
 .slider__item {
   position: relative;
 
+  @include vp-1365 {}
+
+  @include vp-767 {}
+
   &--none {
     display: none;
+
+    @include vp-1365 {}
+
+    @include vp-767 {}
   }
 }
 
 .slider__text {
   position: absolute;
-  bottom: 28px;
+  bottom: 26px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 22px;
   line-height: 22px;
   color: $color-default-white;
   white-space: nowrap;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: calc(49% - 1px);
+
+  @include vp-1365 {
+    top: 48%;
+  }
+
+  @include vp-767 {
+    top: calc(50% + 1px);
+  }
+
+  &--prev {
+    left: -76px;
+
+    @include vp-1365 {
+      left: -21px;
+    }
+
+    @include vp-767 {
+      left: -17px;
+    }
+  }
+
+  &--next {
+    right: -76px;
+
+    @include vp-1365 {
+      right: -21px;
+    }
+
+    @include vp-767 {
+      right: -17px;
+    }
+  }
+}
+
+.slider__svg-arrow {
+  width: 16px;
+  height: 32px;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
 }

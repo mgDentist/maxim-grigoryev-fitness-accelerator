@@ -2,10 +2,15 @@
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
 
   @include vp-1365 {}
 
-  @include vp-767 {}
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .promo__left-part {

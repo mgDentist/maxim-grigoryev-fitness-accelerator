@@ -1,0 +1,50 @@
+.actions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.actions-list__item {
+  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+  padding: 23px 28px 33px;
+  color: $color-darken-blue;
+  border: 7px solid $color-transparent;
+  border-image: linear-gradient(to bottom right, $color-torch-red, $color-dark-blue);
+  border-image-slice: 1;
+}
+
+.actions-list__title {
+  margin-bottom: 9px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.actions-list__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.actions-list__link {
+  position: relative;
+  width: min-content;
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: $color-darken-blue;
+  }
+}

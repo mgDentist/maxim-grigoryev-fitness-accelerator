@@ -1,6 +1,6 @@
 .hero {
   padding-bottom: size(120px);
-  background: linear-gradient(to right, #003EB7, #ED0233);
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
   color: $color-default-white;
 
   @include vp-1365 {

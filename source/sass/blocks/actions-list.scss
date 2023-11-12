@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @include vp-1365 {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  @include vp-767 {}
 }
 
 .actions-list__item {
@@ -13,6 +20,12 @@
   border: 7px solid $color-transparent;
   border-image: linear-gradient(to bottom right, $color-torch-red, $color-dark-blue);
   border-image-slice: 1;
+
+  @include vp-1365 {
+    width: 324px;
+  }
+
+  @include vp-767 {}
 }
 
 .actions-list__title {
@@ -20,12 +33,29 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .actions-list__description {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .actions-list__link {
@@ -38,6 +68,10 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
 
+  @include vp-1365 {}
+
+  @include vp-767 {}
+
   &::after {
     position: absolute;
     content: "";
@@ -46,5 +80,11 @@
     bottom: -4px;
     left: 0;
     background-color: $color-darken-blue;
+
+    @include vp-1365 {
+      bottom: -5px;
+    }
+
+    @include vp-767 {}
   }
 }

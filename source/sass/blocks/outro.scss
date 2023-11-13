@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
 
-  @include vp-1365 {}
+  @include vp-1365 {
+    flex-direction: column;
+  }
 
 @include vp-767 {}
 }

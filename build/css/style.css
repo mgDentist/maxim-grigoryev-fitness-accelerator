@@ -3764,10 +3764,34 @@ fieldset {
   color: #ffffff;
   background-color: #102654;
 }
+@media (max-width: 1365px) {
+  .free-visit {
+    padding: 100px 0 99px;
+  }
+}
+@media (max-width: 767px) {
+  .free-visit {
+    padding: 71px 0 70px;
+  }
+}
+
 .free-visit__container {
   padding-left: 103px;
   padding-right: 170px;
 }
+@media (max-width: 1365px) {
+  .free-visit__container {
+    padding-left: 133px;
+    padding-right: 132px;
+  }
+}
+@media (max-width: 767px) {
+  .free-visit__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .free-visit__main-title {
   margin-bottom: 34px;
   font-family: "Alumni Sans", sans-serif;
@@ -3778,6 +3802,7 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .free-visit__main-title {
+    margin-bottom: 27px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
@@ -3785,6 +3810,7 @@ fieldset {
 }
 @media (max-width: 767px) {
   .free-visit__main-title {
+    margin-bottom: 30px;
     font-size: 32px;
     font-style: normal;
     line-height: 32px;
@@ -3799,6 +3825,23 @@ fieldset {
   gap: 30px;
   margin-bottom: 28px;
 }
+@media (max-width: 1365px) {
+  .free-visit__fieldset {
+    margin-bottom: 29px;
+    gap: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .free-visit__fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 26px;
+    margin-bottom: 39px;
+  }
+}
+
 .free-visit__input {
   width: 190px;
   padding-top: 10px;
@@ -3807,6 +3850,18 @@ fieldset {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 1px solid #74819c;
+}
+@media (max-width: 1365px) {
+  .free-visit__input {
+    width: 221px;
+    padding-bottom: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .free-visit__input {
+    width: 100%;
+    padding-bottom: 6px;
+  }
 }
 .free-visit__input::-webkit-input-placeholder {
   color: #ffffff;
@@ -3838,6 +3893,61 @@ fieldset {
   font-weight: 400;
   line-height: 22px;
 }
+@media (max-width: 1365px) {
+  .free-visit__input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .free-visit__input::-moz-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .free-visit__input:-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .free-visit__input::-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .free-visit__input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .free-visit__input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .free-visit__input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .free-visit__input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .free-visit__input::-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .free-visit__input::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
+
 .free-visit__button {
   width: 100%;
   display: -webkit-box;
@@ -3856,14 +3966,42 @@ fieldset {
   text-transform: uppercase;
   border: 2px solid #ffffff;
 }
+@media (max-width: 1365px) {
+  .free-visit__button {
+    padding: 20px 56px 19px;
+  }
+}
 .contacts {
   padding: 60px 0 64px;
   border-top: 1px solid #74819c;
 }
+@media (max-width: 1365px) {
+  .contacts {
+    padding: 100px 0 63px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding: 67px 0 63px;
+  }
+}
+
 .contacts__container {
   padding-left: 120px;
   padding-right: 53px;
 }
+@media (max-width: 1365px) {
+  .contacts__container {
+    padding-left: 133px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .contacts__main-title {
   margin-bottom: 40px;
   font-family: "Alumni Sans", sans-serif;
@@ -3874,10 +4012,11 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .contacts__main-title {
+    margin-bottom: 37px;
     font-size: 42px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.26px;
+    letter-spacing: 0.8px;
   }
 }
 @media (max-width: 767px) {
@@ -3897,12 +4036,14 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .contacts__title {
+    margin-bottom: 11px;
     font-size: 22px;
     line-height: 22px;
   }
 }
 @media (max-width: 767px) {
   .contacts__title {
+    margin-bottom: 12px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -3939,6 +4080,26 @@ fieldset {
   -ms-grid-rows: auto 15px auto;
       grid-template-areas: "addrs tel" "hrs email";
 }
+@media (max-width: 1365px) {
+  .contacts__list {
+    row-gap: 26px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 28px;
+  }
+}
 .contacts__list::before {
   position: absolute;
   content: "";
@@ -3947,6 +4108,11 @@ fieldset {
   bottom: 0;
   left: 43%;
   background-color: #74819C;
+}
+@media (max-width: 767px) {
+  .contacts__list::before {
+    display: none;
+  }
 }
 
 .contacts__item {
@@ -3980,6 +4146,14 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 1365px) {
+  .outro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /* @mixin hover-focus {
     @media (hover: hover) {

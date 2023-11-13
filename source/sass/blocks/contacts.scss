@@ -3,11 +3,11 @@
   border-top: 1px solid #74819c;
 
   @include vp-1365 {
-    padding: 100px 0 63px;
+    padding: 100px 0 100px;
   }
 
   @include vp-767 {
-    padding: 67px 0 63px;
+    padding: 67px 0 70px;
   }
 }
 

@@ -1,7 +1,7 @@
 .promo {
   min-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
 
 
@@ -19,7 +19,7 @@
   background-color: $color-shine-red;
 
   @include vp-1365 {
-    // width: 292px;
+    width: 292px;
     padding: 40px 45px 45px;
   }
 

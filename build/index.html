@@ -47,16 +47,6 @@
           </picture>
         </div>
       </section>
-      <!-- <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
-          </p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-        </div>
-      </section> -->
 
       <section class="main__section gym">
         <div class="container gym__container">
@@ -535,86 +525,120 @@
         </div>
       </section>
 
-      <!-- <section class="main__section feedback">
-        <h2 class="feedback__main-title">Отзывы</h2>
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/feedback-tablet.webp 1x, img/feedback-tablet@2x.webp 2x" width="80" height="80">
-              <source type="image/jpeg" media="(min-width: 320px)"
-                srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x" width="68" height="68">
-              <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/feedback-tablet.png 1x, img/feedback-tablet@2x.png 2x" width="80" height="80"
-                alt="Изображение спортзала и спортивного инвентаря." />
-              <img class="slider__image" src="img/feedback-mobile.png" srcset="img/feedback-mobile@2x.png 2x" width="68"
-                height="68" alt="Модель в легинсах вид снизу." />
-            </picture>
-            <div class="feedback__text-wrapper">
-              <h3 class="feedback__title">Анна Орлова</h3>
-              <p class="fedback__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
-          <li class="feedback__item">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/feedback-tablet.webp 1x, img/feedback-tablet@2x.webp 2x" width="80" height="80">
-              <source type="image/jpeg" media="(min-width: 320px)"
-                srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x" width="68" height="68">
-              <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="img/feedback-tablet.png 1x, img/feedback-tablet@2x.png 2x" width="80" height="80"
-                alt="Изображение спортзала и спортивного инвентаря." />
-              <img class="slider__image" src="img/feedback-mobile.png" srcset="img/feedback-mobile@2x.png 2x" width="68"
-                height="68" alt="Модель в легинсах вид снизу." />
-            </picture>
-            <div class="feedback__text-wrapper">
-              <h3 class="feedback__title">Анна Орлова</h3>
-              <p class="fedback__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
-          <button class="feedback__button feedback__button--prev" type="button"></button>
-          <button class="feedback__button feedback__button--next" type="button"></button>
-        </ul>
-      </section> -->
+      <section class="main__section feedback">
+        <div class="container feedback__container">
+          <h2 class="feedback__main-title">Отзывы</h2>
+          <div class="feedback__slider-wrapper">
+            <ul class="feedback__list">
+              <li class="feedback__item feedback-card">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/feedback-tablet.webp 1x, img/feedback-tablet@2x.webp 2x" width="80" height="80">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x" width="68" height="68">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/feedback-tablet.png 1x, img/feedback-tablet@2x.png 2x" width="80" height="80"
+                    alt="Аватар клиента оставившего отзыв." />
+                  <img class="feedback-card__image" src="img/feedback-mobile.png" srcset="img/feedback-mobile@2x.png 2x"
+                    width="68" height="68" alt="Модель в легинсах вид снизу." />
+                </picture>
+                <div class="feedback-card__text-wrapper">
+                  <h3 class="feedback-card__title">Анна Орлова</h3>
+                  <p class="feedback-card__description">«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе
+                    всегда
+                    чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </li>
+              <li class="feedback__item feedback__item--non-active feedback-card">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/feedback-tablet.webp 1x, img/feedback-tablet@2x.webp 2x" width="80" height="80">
+                  <source type="image/jpeg" media="(min-width: 320px)"
+                    srcset="img/feedback-mobile.webp 1x, img/feedback-mobile@2x.webp 2x" width="68" height="68">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/feedback-tablet.png 1x, img/feedback-tablet@2x.png 2x" width="80" height="80"
+                    alt="Аватар клиента оставившего отзыв." />
+                  <img class="feedback-card__image" src="img/feedback-mobile.png" srcset="img/feedback-mobile@2x.png 2x"
+                    width="68" height="68" alt="Модель в легинсах вид снизу." />
+                </picture>
+                <div class="feedback-card__text-wrapper">
+                  <h3 class="feedback-card__title">Анна Орлова</h3>
+                  <p class="feedback-card__description">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда
+                    чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет
+                    очередей»</p>
+                </div>
+              </li>
+            </ul>
+            <button class="feedback__button btn feedback__button--prev" type="button">
+              <svg class="feedback__svg-arrow" width="16" height="32">
+                <use href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="feedback__button btn feedback__button--next" type="button">
+              <svg class="feedback__svg-arrow" width="16" height="32">
+                <use href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
 
-      <!-- <section class="main__section free-visit">
-        <h2 class="free-visit__main-title"></h2>
-        <form class="free-visit__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="free-visit__fieldset">
-            <legend class="visually-hidden">Данные пользователя</legend>
-            <label class="free-visit__label">
-              <input type="text" class="free-visit__input" required>
-            </label>
-            <label class="free-visit__label">
-              <input type="tel" class="free-visit__input" required>
-            </label>
-          </fieldset>
-          <button class="free-visit__button" type="submit">Отправить</button>
-        </form>
-      </section> -->
+      <section class="main__section outro">
+        <h2 class="visually-hidden">Заключительная секция</h2>
 
-      <!-- <section class="main__section contacts">
-        <h2 class="contacts__main-title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__title">Адрес:</h3>
-            <p class="contacts__description">г. Омск, ул. 60 лет Октября, 7</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">График работы:</h3>
-            <p class="contacts__description">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Телефон:</h3>
-            <p class="contacts__description">8-800-555-55-55</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Email:</h3>
-            <p class="contacts__description">omsk@supergym.ru</p>
-          </li>
-        </ul>
+        <section class="main__section free-visit">
+          <div class="container free-visit__container">
+            <h2 class="free-visit__main-title">Бесплатное занятие</h2>
+            <form class="free-visit__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="free-visit__fieldset">
+                <legend class="visually-hidden">Данные пользователя</legend>
+                <label class="free-visit__label">
+                  <input type="text" class="free-visit__input" required placeholder="Имя">
+                </label>
+                <label class="free-visit__label">
+                  <input type="tel" class="free-visit__input" required placeholder="Телефон">
+                </label>
+              </fieldset>
+              <button class="free-visit__button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="main__section contacts">
+          <div class="container contacts__container">
+            <h2 class="contacts__main-title">Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--address">
+                <h3 class="contacts__title">Адрес:</h3>
+                <p class="contacts__description">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts__item contacts__item--hours">
+                <h3 class="contacts__title">График работы:</h3>
+                <p class="contacts__description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__item contacts__item--tel">
+                <h3 class="contacts__title">Телефон:</h3>
+                <p class="contacts__description">8-800-555-55-55</p>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <h3 class="contacts__title">Email:</h3>
+                <p class="contacts__description">omsk@supergym.ru</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- <section class="intro">
+        <div class="container">
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        </div>
       </section> -->
     </main>
     <!-- <footer class="footer">

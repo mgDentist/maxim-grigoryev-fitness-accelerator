@@ -592,7 +592,7 @@ fieldset {
 }
 
 .is-active {
-  display: block;
+  display: inline;
 }
 
 .is-inactive {
@@ -620,7 +620,7 @@ fieldset {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0.625rem 1.25rem;
+  padding: 0;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -1691,7 +1691,7 @@ fieldset {
 
 .gym__video-wrapper {
   position: absolute;
-  bottom: -115px;
+  bottom: -122px;
   left: -63px;
 }
 @media (max-width: 1365px) {
@@ -1714,6 +1714,11 @@ fieldset {
   }
 }
 
+.gym__img-video-poster {
+  position: absolute;
+  top: 0px;
+}
+
 .gym__video {
   width: 364px;
   height: 228px;
@@ -1732,8 +1737,9 @@ fieldset {
 
 .gym__button {
   position: absolute;
-  top: 24%;
-  left: 31%;
+  top: 27%;
+  left: 36%;
+  pointer-events: none;
 }
 @media (max-width: 1365px) {
   .gym__button {

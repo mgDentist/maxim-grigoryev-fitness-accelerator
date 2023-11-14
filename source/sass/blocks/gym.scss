@@ -132,17 +132,9 @@
   }
 }
 
-.gym__img {
-  @include vp-1365 {}
-
-  @include vp-767 {
-
-  }
-}
-
 .gym__video-wrapper {
   position: absolute;
-  bottom: -115px;
+  bottom: -122px;
   left: -63px;
 
   @include vp-1365 {
@@ -157,6 +149,11 @@
     left: 0;
     transform: none;
   }
+}
+
+.gym__img-video-poster {
+  position: absolute;
+  top: 0px;
 }
 
 .gym__video {
@@ -175,8 +172,9 @@
 
 .gym__button {
   position: absolute;
-  top: 24%;
-  left: 31%;
+  top: 27%;
+  left: 36%;
+  pointer-events: none;
 
   @include vp-1365 {
     top: 22%;

@@ -81,12 +81,27 @@
                 alt="Cпортзал и спортивный инвентарь." />
             </picture>
             <div class="gym__video-wrapper">
-              <video class="gym__video" controls playsinline poster="img/video-poster-desktop.jpg">
-                <source src="https://www.youtube.com/embed/9TZXsZItgdw?si=3-U-2YYCSpyFtiV4" width="364" height="228"
-                  media="(min-width: 1366px)" type="video/mp4" />
-              </video>
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/video-poster-desktop.webp 1x, img/video-poster-desktop@2x.webp 2x" width="364"
+                  height="228">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/video-poster-tablet.webp 1x, img/video-poster-tablet@2x.webp 2x" width="266" height="167">
+                <source type="image/webp" srcset="img/video-poster-mobile.webp 1x, img/video-poster-mobile@2x.webp 2x"
+                  width="320" height="167">
+                <source type="image/jpeg" media="(min-width: 1366px)"
+                  srcset="img/video-poster-desktop.jpg 1x, img/video-poster-desktop@2x.jpg 2x" width="364" height="228">
+                <source type="image/jpeg" media="(min-width: 768px)"
+                  srcset="img/video-poster-tablet.jpg 1x, iimg/video-poster-tablet@2x.jpg 2x" width="266" height="167">
+                <img class="gym__img-video-poster" src="img/video-poster-mobile.jpg" srcset="img/video-poster-mobile@2x.jpg 2x"
+                  width="320" height="167" alt="Превью видео с изображением спортзала и спортивного инвентаря." />
+              </picture>
+              <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
+                title="Бесплатные интерактивные онлайн-курсы" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
               <button class="gym__button btn" type="button">
-                <!-- <svg class="gym__svg-button" width="100" height="100" src="img/svg/player-button.svg"></svg> -->
                 <svg class="gym__svg-button" width="100" height="100">
                   <use href="img/sprite.svg#player-button"></use>
                 </svg>
@@ -102,13 +117,13 @@
           <ul class="abonements__list months">
             <li class="months__item months__item--active">
               <button class="months__button btn">1 месяц</button>
-              </li>
+            </li>
             <li class="months__item">
               <button class="months__button btn">6 месяцев</button>
-              </li>
+            </li>
             <li class="months__item">
               <button class="months__button btn">12 месяцев</button>
-              </li>
+            </li>
           </ul>
           <ul class="abonements__list cards">
             <li class="cards__item">

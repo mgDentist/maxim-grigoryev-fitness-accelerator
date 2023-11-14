@@ -591,6 +591,14 @@ fieldset {
   outline: none;
 }
 
+.is-active {
+  display: block;
+}
+
+.is-inactive {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 85.375rem;
@@ -1896,6 +1904,24 @@ fieldset {
   }
 }
 
+.months__button {
+  font-size: 20px;
+  line-height: 20px;
+  color: inherit;
+}
+@media (max-width: 1365px) {
+  .months__button {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .months__button {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 .cards {
   padding-top: 49px;
   display: -webkit-box;
@@ -2167,7 +2193,7 @@ fieldset {
 }
 
 .promo__left-part {
-  padding: 79px 80px 80px;
+  padding: 79px 80px 79px;
   color: #ffffff;
   background-color: #ed0233;
 }

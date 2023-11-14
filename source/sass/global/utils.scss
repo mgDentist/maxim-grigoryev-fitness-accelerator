@@ -69,3 +69,10 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.is-active {
+  display: block;
+}
+.is-inactive {
+display: none;
+}

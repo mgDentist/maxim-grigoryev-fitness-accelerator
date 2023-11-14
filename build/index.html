@@ -100,17 +100,29 @@
         <div class="container abonements__container">
           <h2 class="abonements__title">Абонементы</h2>
           <ul class="abonements__list months">
-            <li class="months__item months__item--active">1 месяц</li>
-            <li class="months__item">6 месяцев</li>
-            <li class="months__item">12 месяцев</li>
+            <li class="months__item months__item--active">
+              <button class="months__button btn">1 месяц</button>
+              </li>
+            <li class="months__item">
+              <button class="months__button btn">6 месяцев</button>
+              </li>
+            <li class="months__item">
+              <button class="months__button btn">12 месяцев</button>
+              </li>
           </ul>
           <ul class="abonements__list cards">
             <li class="cards__item">
               <h2 class="cards__title">С тренером</h2>
               <p class="cards__description">12 занятий</p>
               <p class="cards__price">
-                <span class="cards__rouble">5000</span>
-                <span class="cards__shadow">5000</span>
+                <span class="cards__rouble is-active" data-month="1">5000</span>
+                <span class="cards__shadow is-active" data-month="1">5000</span>
+
+                <span class="cards__rouble is-inactive" data-month="6">30000</span>
+                <span class="cards__shadow is-inactive" data-month="6">30000</span>
+
+                <span class="cards__rouble is-inactive" data-month="12">60000</span>
+                <span class="cards__shadow is-inactive" data-month="12">60000</span>
 
                 <svg class="cards__rouble-icon" width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>
@@ -122,8 +134,14 @@
               <h2 class="cards__title">Дневной</h2>
               <p class="cards__description">с 8:00 до 17:00 </p>
               <p class="cards__price">
-                <span class="cards__rouble">1700</span>
-                <span class="cards__shadow">1700</span>
+                <span class="cards__rouble" data-month="1">1700</span>
+                <span class="cards__shadow" data-month="1">1700</span>
+
+                <span class="cards__rouble is-inactive" data-month="6">10200</span>
+                <span class="cards__shadow is-inactive" data-month="6">10200</span>
+
+                <span class="cards__rouble is-inactive" data-month="12">20400</span>
+                <span class="cards__shadow is-inactive" data-month="12">20400</span>
 
                 <svg class="cards__rouble-icon" width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>
@@ -135,8 +153,14 @@
               <h2 class="cards__title">Полный день</h2>
               <p class="cards__description">с 8:00 до 22:00 </p>
               <p class="cards__price">
-                <span class="cards__rouble">2700</span>
-                <span class="cards__shadow">2700</span>
+                <span class="cards__rouble" data-month="1">2700</span>
+                <span class="cards__shadow" data-month="1">2700</span>
+
+                <span class="cards__rouble is-inactive" data-month="6">16200</span>
+                <span class="cards__shadow is-inactive" data-month="6">16200</span>
+
+                <span class="cards__rouble is-inactive" data-month="12">32400</span>
+                <span class="cards__shadow is-inactive" data-month="12">32400</span>
 
                 <svg class="cards__rouble-icon" width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>

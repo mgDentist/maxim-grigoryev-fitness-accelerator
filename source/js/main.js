@@ -2,7 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {abonementsToggle} from './modules/abonements-toggle/abonements-toggle';
-import {videoStarter} from './modules/video-starter.js/video-starter';
+import {videoStarter} from './modules/video-starter/video-starter';
+import {feedbackSwiper} from './modules/slider-feedback/slider-feedback';
+import {jurySwiper} from './modules/slider-jury/slider-jury';
 
 // ---------------------------------
 
@@ -18,6 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   abonementsToggle();
   videoStarter();
+  feedbackSwiper();
+  jurySwiper();
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

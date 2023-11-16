@@ -1,5 +1,5 @@
 .feedback {
-  padding: 120px 0;
+  padding: 120px 0 97px;
 
   @include vp-1365 {
     padding: 100px 0;
@@ -39,30 +39,26 @@
   }
 }
 
-.feedback__slider-wrapper {
+.feedback-wrapper {
   width: fit-content;
   position: relative;
   margin: 0 auto;
+}
 
-  @include vp-1365 {}
+.feedback__slider-wrapper {
+  max-width: 560px;
 
-  @include vp-767 {}
+
+  @include vp-1365 {
+    max-width: 580px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+  }
 }
 
 .feedback__list {
-  display: flex;
-  justify-content: center;
-
-  @include vp-1365 {}
-
-  @include vp-767 {}
-}
-
-.feedback__item {
-
-  &--non-active {
-    display: none;
-  }
 
   @include vp-1365 {}
 
@@ -70,36 +66,43 @@
 }
 
 .feedback__button {
+  z-index: 10;
   position: absolute;
-  top: calc(40% - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(41% - 1px);
+  cursor: pointer;
 
-  @include vp-1365 {}
+  @include vp-1365 {
+    top: calc(44% - 1px);
+  }
 
   @include vp-767 {
-    top: calc(43% + 3px);
+    top: calc(43% + 4px);
   }
 
   &--prev {
-    left: -77px;
+    left: -57px;
 
     @include vp-1365 {
-      left: -70px;
+      left: -57px;
     }
 
     @include vp-767 {
-      left: -50px;
+      left: -30px;
     }
   }
 
   &--next {
-    right: -77px;
+    right: -57px;
 
     @include vp-1365 {
-      right: -70px;
+      right: -50px;
     }
 
     @include vp-767 {
-      right: -50px;
+      right: -30px;
     }
   }
 }

@@ -1,45 +1,46 @@
 .slider {
+  max-width: 1160px;
+
   position: relative;
   padding-top: 45px;
 
   @include vp-1365 {
+    max-width: 568px;
     padding-top: 40px;
   }
 
   @include vp-767 {
+    max-width: 226px;
     padding-top: 41px;
   }
 }
 
 .slider__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  // text-align: center;
+  // width: fit-content;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // gap: 40px;
 
   @include vp-1365 {
-    gap: 32px;
+    // gap: 32px;
   }
 
   @include vp-767 {
-    gap: 0;
+    // gap: 0;
   }
 }
 
 .slider__item {
   position: relative;
+  justify-content: center;
+    display: flex;
 
   @include vp-1365 {}
 
   @include vp-767 {}
-
-  &--none {
-    display: none;
-
-    @include vp-1365 {}
-
-    @include vp-767 {}
-  }
 }
 
 .slider__text {
@@ -65,37 +66,37 @@
 
 .slider__button {
   position: absolute;
-  top: calc(49% - 1px);
+  top: calc(52% - 1px);
 
   @include vp-1365 {
-    top: 48%;
+    top: calc(51% + 1px);
   }
 
   @include vp-767 {
-    top: calc(50% + 1px);
+    op: calc(53% + 1px);
   }
 
   &--prev {
-    left: -76px;
+    left: -57px;
 
     @include vp-1365 {
-      left: -21px;
+      left: -56px;
     }
 
     @include vp-767 {
-      left: -17px;
+      left: -30px;
     }
   }
 
   &--next {
-    right: -76px;
+    right: -57px;
 
     @include vp-1365 {
-      right: -21px;
+      right: -56px;
     }
 
     @include vp-767 {
-      right: -17px;
+      right: -30px;
     }
   }
 }

@@ -44,6 +44,7 @@
   @include vp-1365 {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
   }
 
   @include vp-767 {

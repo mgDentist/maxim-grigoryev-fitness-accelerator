@@ -537,34 +537,94 @@
       <section class="main__section faq">
         <div class="container faq__container">
           <h2 class="faq__main-title">Вопросы и ответы</h2>
-          <div class="faq__inner-wrapper">
-            <div class="faq__menu-buttons">
-              <button class="faq__menu-button btn faq__menu-button--active faq__menu-button--center"
-                type="button">Центр</button>
-              <button class="faq__menu-button btn faq__menu-button--abonement" type="button">Абонемент</button>
-              <button class="faq__menu-button btn faq__menu-button--services" type="button">Услуги</button>
-              <button class="faq__menu-button btn faq__menu-button--rules" type="button">Правила</button>
+          <div class="faq__inner-wrapper" data-tabs="parent">
+            <div class="faq__menu-buttons" data-tabs="controls">
+              <button class="faq__menu-button btn faq__menu-button--active faq__menu-button--center" type="button"
+                data-tabs="control">Центр</button>
+              <button class="faq__menu-button btn faq__menu-button--abonement" type="button"
+                data-tabs="control">Абонемент</button>
+              <button class="faq__menu-button btn faq__menu-button--services" type="button"
+                data-tabs="control">Услуги</button>
+              <button class="faq__menu-button btn faq__menu-button--rules" type="button"
+                data-tabs="control">Правила</button>
             </div>
-            <ul class="faq__items faq__items--center">
-              <li class="faq__item faq__item--fit faq__item--active">
-                <h3 class="faq__title">Как стать членом фитнес&#8209;центра?</h3>
-                <p class="faq__description">При первом посещении и покупке абонемента, необходимо заполнить анкету и
-                  подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам
-                  на почту.</p>
-              </li>
-              <li class="faq__item">
-                <h3 class="faq__title">Где можно посмотреть расписание?</h3>
-                <p class="faq__description"></p>
-              </li>
-              <li class="faq__item faq__item--towels">
-                <h3 class="faq__title">Есть кулеры в центре? Предоставляются полотенца?</h3>
-                <p class="faq__description"></p>
-              </li>
-              <li class="faq__item faq__item--qual">
-                <h3 class="faq__title">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
-                <p class="faq__description"></p>
-              </li>
-            </ul>
+            <div class="faq__tabs-element" data-tabs="content">
+              <ul class="faq__items faq__items--center" data-tabs="element">
+                <li class="faq__item faq__item--fit faq__item--active">
+                  <h3 class="faq__title">Как стать членом фитнес&#8209;центра?</h3>
+                  <p class="faq__description">При первом посещении и покупке абонемента, необходимо заполнить анкету и
+                    подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет
+                    вам
+                    на почту.</p>
+                </li>
+                <li class="faq__item">
+                  <h3 class="faq__title">Где можно посмотреть расписание?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio.</p>
+                </li>
+                <li class="faq__item faq__item--towels">
+                  <h3 class="faq__title">Есть кулеры в центре? Предоставляются полотенца?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est!</p>
+                </li>
+                <li class="faq__item faq__item--qual">
+                  <h3 class="faq__title">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error!</p>
+                </li>
+              </ul>
+              <ul class="faq__items faq__items--center" data-tabs="element">
+                <li class="faq__item faq__item--fit faq__item--active">
+                  <h3 class="faq__title">Lorem, ipsum dolor.</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nostrum odio odit mollitia iusto eum maxime labore sapiente nulla voluptatum?</p>
+                </li>
+                <li class="faq__item">
+                  <h3 class="faq__title">Lorem ipsum dolor sit.</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+                <li class="faq__item faq__item--towels">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet consectetur adipisicing?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad similique facilis sed explicabo?</p>
+                </li>
+                <li class="faq__item faq__item--qual">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque nulla quae fugit magni sed impedit quibusdam facere ad.</p>
+                </li>
+              </ul>
+              <ul class="faq__items faq__items--center" data-tabs="element">
+                <li class="faq__item faq__item--fit faq__item--active">
+                  <h3 class="faq__title">Lorem ipsum dolor sit?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur animi at possimus nostrum illum, illo et hic ab facere expedita.</p>
+                </li>
+                <li class="faq__item">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minima quos praesentium, modi necessitatibus tenetur doloremque temporibus!</p>
+                </li>
+                <li class="faq__item faq__item--towels">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, ratione.</p>
+                </li>
+                <li class="faq__item faq__item--qual">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quos?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ipsum nostrum voluptatum ab quisquam dicta, cumque suscipit quidem.</p>
+                </li>
+              </ul>
+              <ul class="faq__items faq__items--center" data-tabs="element">
+                <li class="faq__item faq__item--fit faq__item--active">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus soluta voluptatibus reiciendis harum eos magni ipsum. Natus odio fugiat ducimus!</p>
+                </li>
+                <li class="faq__item">
+                  <h3 class="faq__title">Lorem, ipsum dolor?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li class="faq__item faq__item--towels">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet?</h3>
+                  <p class="faq__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eum aperiam dolorum atque sapiente sint, repellat soluta excepturi inventore dolorem!</p>
+                </li>
+                <li class="faq__item faq__item--qual">
+                  <h3 class="faq__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aspernatur dolore quia necessitatibus?</h3>
+                  <p class="faq__description">Lorem.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

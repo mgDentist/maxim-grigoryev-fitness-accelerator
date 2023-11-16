@@ -5,7 +5,7 @@ import {abonementsToggle} from './modules/abonements-toggle/abonements-toggle';
 import {videoStarter} from './modules/video-starter/video-starter';
 import {feedbackSwiper} from './modules/slider-feedback/slider-feedback';
 import {jurySwiper} from './modules/slider-jury/slider-jury';
-
+import {initTabs} from './vendor/tabs/init-tabs';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   abonementsToggle();
   videoStarter();
-  feedbackSwiper();
-  jurySwiper();
+  // feedbackSwiper();
+  // jurySwiper();
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initTabs();
   });
 });
 

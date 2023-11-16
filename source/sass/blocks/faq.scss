@@ -32,9 +32,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: flex-start;
 
   @include vp-1365 {
     flex-direction: row;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -94,15 +96,19 @@
   }
 
   &--active {
-    color: $color-default-white;
-    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image-slice: 1;
+
 
     @include vp-1365 {}
 
     @include vp-767 {}
   }
+}
+
+.faq__menu-button.is-active {
+  color: $color-default-white;
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-slice: 1;
 }
 
 .faq__title {
@@ -143,6 +149,7 @@
 }
 
 .faq__items {
+  display: none;
   flex-grow: 1;
   position: relative;
 
@@ -157,9 +164,12 @@
   }
 }
 
+.faq__items.is-active {
+  display: block;
+}
+
 .faq__item {
   position: relative;
-  // padding: 33px 50px 23px 0;
   padding: 34px 50px 21px 0;
   cursor: pointer;
 

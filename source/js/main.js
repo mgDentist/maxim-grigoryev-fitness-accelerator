@@ -6,6 +6,7 @@ import {videoStarter} from './modules/video-starter/video-starter';
 import {feedbackSwiper} from './modules/slider-feedback/slider-feedback';
 import {jurySwiper} from './modules/slider-jury/slider-jury';
 import {initTabs} from './vendor/tabs/init-tabs';
+import {initAccordions} from './vendor/accordion/init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
+    initAccordions();
   });
 });
 

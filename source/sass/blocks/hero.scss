@@ -161,6 +161,16 @@
     font-weight: 700;
     line-height: 12px;
   }
+
+  @include hover-focus {
+    color: $color-light-blue;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-default-blue;
+  }
 }
 
 .index-list__img {

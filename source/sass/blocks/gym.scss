@@ -172,13 +172,49 @@
 
 .gym__button {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 27%;
   left: 36%;
-  pointer-events: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  outline: 2px solid #ed023320;
+  outline-offset: 14px;
+  // pointer-events: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    outline: 2px solid $color-default-blue;
+    background: $color-default-white;
+
+    & .gym__svg-button {
+      fill: $color-default-blue;
+    }
+  }
+
+  @include active {
+    top: 30%;
+    left: 38%;
+    width: 58px;
+    height: 58px;
+    outline: 2px solid $color-default-blue;
+    outline-offset: 21px;
+    background: $color-default-white;
+
+    & .gym__svg-button {
+      fill: $color-default-blue;
+    }
+  }
 
   @include vp-1365 {
+    width: 52px;
+    height: 52px;
     top: 22%;
     left: 29%;
+    outline-offset: 10px;
   }
 
   @include vp-767 {
@@ -188,13 +224,22 @@
 }
 
 .gym__svg-button {
-  width: 100px;
-  height: 100px;
+  width: 17px;
+  height: 17px;
+  fill: $color-default-white;
 
   @include vp-1365 {
-    width: 72px;
-    height: 72px;
+    width: 12px;
+    height: 12px;
   }
 
   @include vp-767 {}
+
+  @include hover-focus {
+    fill: $color-default-blue;
+  }
+
+  @include active {
+    fill: $color-default-blue;
+  }
 }

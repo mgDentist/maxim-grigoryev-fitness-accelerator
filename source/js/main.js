@@ -1,12 +1,12 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {abonementsToggle} from './modules/abonements-toggle/abonements-toggle';
-import {videoStarter} from './modules/video-starter/video-starter';
-import {feedbackSwiper} from './modules/slider-feedback/slider-feedback';
-import {jurySwiper} from './modules/slider-jury/slider-jury';
-import {initTabs} from './vendor/tabs/init-tabs';
-import {initAccordions} from './vendor/accordion/init-accordion';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+import { abonementsToggle } from './modules/abonements-toggle/abonements-toggle';
+import { videoStarter } from './modules/video-starter/video-starter';
+import { feedbackSwiper } from './modules/slider-feedback/slider-feedback';
+import { jurySwiper } from './modules/slider-jury/slider-jury';
+import { initTabs } from './vendor/tabs/init-tabs';
+import { initAccordions } from './vendor/accordion/init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -2469,6 +2469,7 @@ fieldset {
 }
 
 .hero {
+  margin-top: -1px;
   padding-bottom: 7.5rem;
   background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
   background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
@@ -2476,12 +2477,13 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .hero {
-    padding-bottom: 99px;
+    margin-top: -2px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
   .hero {
-    padding-bottom: 70px;
+    padding-bottom: 56px;
   }
 }
 
@@ -2510,11 +2512,13 @@ fieldset {
 .hero__left-text-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 113px 270px;
+  -ms-grid-columns: 113px 18px 270px;
   grid-template-columns: 113px 270px;
   -webkit-column-gap: 18px;
      -moz-column-gap: 18px;
           column-gap: 18px;
+      grid-template-areas: "ltext rtext" "buy-button buy-button";
+  padding-bottom: 45px;
 }
 @media (max-width: 1365px) {
   .hero__left-text-wrapper {
@@ -2523,6 +2527,7 @@ fieldset {
     -webkit-column-gap: 26px;
        -moz-column-gap: 26px;
             column-gap: 26px;
+    padding-bottom: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -2534,9 +2539,11 @@ fieldset {
 }
 
 .hero__left-text {
-  margin-top: 90px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ltext;
+  margin-top: 145px;
+  -ms-grid-row-align: center;
       align-self: center;
   text-align: right;
   font-size: 14px;
@@ -2544,7 +2551,7 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .hero__left-text {
-    margin-top: 73px;
+    margin-top: 105px;
   }
 }
 @media (max-width: 767px) {
@@ -2556,7 +2563,10 @@ fieldset {
 }
 
 .hero__right-text {
-  padding-top: 63px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: rtext;
+  padding-top: 62px;
   padding-right: 16px;
   text-align: right;
   text-transform: uppercase;
@@ -2569,12 +2579,12 @@ fieldset {
 }
 @media (max-width: 767px) {
   .hero__right-text {
-    padding-top: 40px;
+    padding-top: 41px;
   }
 }
 
 .hero__inner-text--city {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -2583,6 +2593,7 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .hero__inner-text--city {
+    margin-bottom: 10px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
@@ -2619,6 +2630,10 @@ fieldset {
 }
 
 .hero__button {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: buy-button;
   max-width: 290px;
   -ms-grid-column: 2;
   grid-column: 2;
@@ -2631,7 +2646,6 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -100px;
   margin-left: 8px;
   padding: 25px 55px;
   -ms-grid-column-align: center;
@@ -2651,7 +2665,6 @@ fieldset {
 @media (max-width: 1365px) {
   .hero__button {
     width: 100%;
-    margin-top: -47px;
     margin-left: 0;
     padding: 20px 32px 19px 31px;
     font-weight: 400;
@@ -2702,7 +2715,7 @@ fieldset {
 }
 @media (max-width: 767px) {
   .gym {
-    padding: 71px 0 70px;
+    padding: 71px 0 64px;
   }
 }
 
@@ -2750,7 +2763,7 @@ fieldset {
 }
 
 .gym__title {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -2847,7 +2860,7 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .gym__video-wrapper {
-    bottom: -83px;
+    bottom: -89px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -2897,14 +2910,14 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 27%;
-  left: 36%;
+  top: 33%;
+  left: 40%;
   width: 72px;
   height: 72px;
   border-radius: 50%;
   background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
   outline: 2px solid rgba(237, 2, 51, 0.1254901961);
-  outline-offset: 14px;
+  outline-offset: 11px;
   cursor: pointer;
 }
 @media (hover: hover) {
@@ -2937,29 +2950,35 @@ fieldset {
 }
 @media (max-width: 1365px) {
   .gym__button {
-    width: 52px;
-    height: 52px;
-    top: 22%;
-    left: 29%;
-    outline-offset: 10px;
+    width: 51px;
+    height: 51px;
+    top: 33%;
+    left: 40%;
+    outline-offset: 8px;
   }
 }
 @media (max-width: 767px) {
   .gym__button {
-    top: 23%;
-    left: 32%;
+    top: 33%;
+    left: 42%;
   }
 }
 
 .gym__svg-button {
-  width: 17px;
-  height: 17px;
+  margin-left: 6px;
+  width: 14px;
+  height: 14px;
   fill: #ffffff;
 }
 @media (max-width: 1365px) {
   .gym__svg-button {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__svg-button {
+    margin-left: 3px;
   }
 }
 @media (hover: hover) {

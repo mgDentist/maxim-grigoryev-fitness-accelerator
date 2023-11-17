@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 71px 0 70px;
+    padding: 71px 0 64px;
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .gym__title {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -138,7 +138,7 @@
   left: -63px;
 
   @include vp-1365 {
-    bottom: -83px;
+    bottom: -89px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -175,14 +175,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 27%;
-  left: 36%;
+  top: 33%;
+  left: 40%;
   width: 72px;
   height: 72px;
   border-radius: 50%;
   background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
   outline: 2px solid #ed023320;
-  outline-offset: 14px;
+  outline-offset: 11px;
   // pointer-events: none;
   cursor: pointer;
 
@@ -210,30 +210,33 @@
   }
 
   @include vp-1365 {
-    width: 52px;
-    height: 52px;
-    top: 22%;
-    left: 29%;
-    outline-offset: 10px;
+    width: 51px;
+    height: 51px;
+    top: 33%;
+    left: 40%;
+    outline-offset: 8px;
   }
 
   @include vp-767 {
-    top: 23%;
-    left: 32%;
+    top: 33%;
+    left: 42%;
   }
 }
 
 .gym__svg-button {
-  width: 17px;
-  height: 17px;
+  margin-left: 6px;
+  width: 14px;
+  height: 14px;
   fill: $color-default-white;
 
   @include vp-1365 {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    margin-left: 3px;
+  }
 
   @include hover-focus {
     fill: $color-default-blue;

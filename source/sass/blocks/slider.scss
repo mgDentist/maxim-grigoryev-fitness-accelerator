@@ -36,7 +36,13 @@
 .slider__item {
   position: relative;
   justify-content: center;
-    display: flex;
+  display: flex;
+
+  @include hover-focus {
+    & .slider-additional-info {
+      display: block;
+    }
+  }
 
   @include vp-1365 {}
 

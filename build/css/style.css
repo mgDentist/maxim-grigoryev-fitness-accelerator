@@ -1685,6 +1685,10 @@ fieldset {
   display: none;
 }
 
+.input-message.is-invalid {
+  color: #ff1420;
+}
+
 .container {
   width: 100%;
   max-width: 85.375rem;
@@ -3793,9 +3797,15 @@ fieldset {
   .slider__item:hover:not(.focus-visible) .slider-additional-info {
     display: block;
   }
+  .slider__item:hover:not(.focus-visible) .slider__text {
+    display: none;
+  }
 }
 .slider__item.focus-visible:focus .slider-additional-info {
   display: block;
+}
+.slider__item.focus-visible:focus .slider__text {
+  display: none;
 }
 .slider__text {
   position: absolute;
@@ -3921,6 +3931,16 @@ fieldset {
   color: #ffffff;
   text-align: center;
 }
+@media (max-width: 1365px) {
+  .slider-additional-info {
+    padding: 30px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-additional-info {
+    padding: 20px 20px;
+  }
+}
 
 .slider-additional-info__title {
   margin-bottom: 8px;
@@ -3963,10 +3983,7 @@ fieldset {
   width: 6px;
   height: 6px;
   left: -16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 8px;
   background-color: #ffffff;
   border-radius: 50%;
 }

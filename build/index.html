@@ -629,7 +629,8 @@
                       <h3 class="faq__title">Как стать членом фитнес&#8209;центра?</h3>
                       <div data-accordion="content">
                         <p class="faq__description">При первом посещении и покупке абонемента, необходимо заполнить
-                          анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор
+                          анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и
+                          договор
                           придет вам на почту.</p>
                       </div>
                       <svg class="faq__decorative-button" width="40" height="40">
@@ -930,7 +931,8 @@
                   <div class="feedback-card__text-wrapper">
                     <h3 class="feedback-card__title">sit amet consectetur</h3>
                     <p class="feedback-card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perspiciatis ipsa fugit facilis, quasi adipisci audantium quidem eligendi, ipsam quidem quidem id vero ea architecto at totam?</p>
+                      Perspiciatis ipsa fugit facilis, quasi adipisci audantium quidem eligendi, ipsam quidem quidem id
+                      vero ea architecto at totam?</p>
                   </div>
                 </li>
 
@@ -950,7 +952,8 @@
                   <div class="feedback-card__text-wrapper">
                     <h3 class="feedback-card__title">Lorem ipsum dolor</h3>
                     <p class="feedback-card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perspiciatis ipsa fugit facilis, quasi adipisci voluptatibus earum nulla hic ab , ipsam id vero ipsam ea architecto at totam?</p>
+                      Perspiciatis ipsa fugit facilis, quasi adipisci voluptatibus earum nulla hic ab , ipsam id vero
+                      ipsam ea architecto at totam?</p>
                   </div>
                 </li>
                 <li class="feedback__item feedback-card swiper-slide">
@@ -968,7 +971,8 @@
                   </picture>
                   <div class="feedback-card__text-wrapper">
                     <h3 class="feedback-card__title">sit amet consectetur</h3>
-                    <p class="feedback-card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit, quasi adipisci voluptatibus earum nulla hic ab molestiae
+                    <p class="feedback-card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit,
+                      quasi adipisci voluptatibus earum nulla hic ab molestiae
                       laudantium quidem eligendi, ipsam id vero ea architecto at totam?</p>
                   </div>
                 </li>
@@ -995,17 +999,19 @@
         <section class="main__section free-visit">
           <div class="container free-visit__container">
             <h2 class="free-visit__main-title">Бесплатное занятие</h2>
-            <div data-form-validate data-callback="callback">
-              <form class="free-visit__form" action="https://echo.htmlacademy.ru/" method="get">
+            <div data-form-validate data-callback="base" data-form-node>
+              <form class="free-visit__form" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="free-visit__fieldset">
                   <legend class="visually-hidden">Данные пользователя</legend>
                   <label class="free-visit__label" data-required data-limitation="letters" data-validate-type="text"
-                    data-on-input-validate>
-                    <input type="text" class="free-visit__input" placeholder="Имя">
+                    data-on-input-validate data-message-base="Обязательное поле">
+                    <input class="free-visit__input" type="text" name="user_name" required placeholder="Имя"
+                      aria-label="Имя" autocomplete="off">
                   </label>
-                  <label class="free-visit__label" data-required data-limitation="digit" data-validate-type="phone"
-                    data-on-input-validate>
-                    <input type="tel" class="free-visit__input" required placeholder="Телефон">
+                  <label class="free-visit__label" data-required data-validate-type="phone"
+                    data-message-base="Обязательное поле" data-on-input-validate>
+                    <input class="free-visit__input" type="tel" name="user_phone" required placeholder="Телефон"
+                      aria-label="Телефон" autocomplete="off">
                   </label>
                 </fieldset>
                 <button class="free-visit__button btn" type="submit">Отправить</button>

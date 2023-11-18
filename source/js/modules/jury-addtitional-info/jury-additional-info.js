@@ -1,13 +1,15 @@
 export const sliderItems = document.querySelectorAll('.slider__item');
 
 sliderItems.forEach((item) => {
-  item.addEventListener('touchstart', function () {
-    // Используем `this` для обращения к текущему элементу
-    const additionalInfo = this.querySelector('.slider-additional-info');
-    if (additionalInfo.style.display === 'block') {
+  item.addEventListener('touchstart', () => {
+    const additionalInfo = item.querySelector('.slider-additional-info');
+    const textElement = item.querySelector('.slider__text');
+    if (getComputedStyle(additionalInfo).display === 'block') {
       additionalInfo.style.display = 'none';
+      textElement.style.display = 'block';
     } else {
       additionalInfo.style.display = 'block';
+      textElement.style.display = 'none';
     }
   });
 });

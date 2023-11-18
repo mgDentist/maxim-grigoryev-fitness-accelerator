@@ -42,6 +42,10 @@
     & .slider-additional-info {
       display: block;
     }
+
+    & .slider__text {
+      display: none;
+    }
   }
 
   @include vp-1365 {}

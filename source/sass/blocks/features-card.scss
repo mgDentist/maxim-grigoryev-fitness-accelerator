@@ -121,6 +121,7 @@
 
   &--other {
     margin-bottom: 12px;
+    margin-left: 3px;
     background: $color-default-white;
     background-clip: text;
     -webkit-background-clip: text;
@@ -128,6 +129,7 @@
 
     @include vp-1365 {
       margin-bottom: 25px;
+      margin-left: 0;
     }
 
     @include vp-767 {

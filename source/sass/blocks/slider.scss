@@ -86,7 +86,7 @@
 .slider__button {
   width: 56px;
   height: 56px;
-  top: calc(52% - 1px);
+  top: calc(49% - 2px);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@
   }
 
   @include vp-1365 {
-    top: calc(51% + 1px);
+    top: calc(47% + 2px);
   }
 
   @include vp-767 {
@@ -120,26 +120,26 @@
   }
 
   &--prev {
-    left: -57px;
+    left: -77px;
 
     @include vp-1365 {
-      left: -56px;
+      left: -76px;
     }
 
     @include vp-767 {
-      left: -30px;
+      left: -52px;
     }
   }
 
   &--next {
-    right: -57px;
+    right: -77px;
 
     @include vp-1365 {
-      right: -56px;
+      right: -76px;
     }
 
     @include vp-767 {
-      right: -30px;
+      right: -52px;
     }
   }
 }

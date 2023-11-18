@@ -1,5 +1,5 @@
 .feedback {
-  padding: 120px 0 97px;
+  padding: 120px 0 120px;
 
   @include vp-1365 {
     padding: 100px 0;
@@ -81,7 +81,7 @@
 .feedback__button {
   width: 56px;
   height: 56px;
-  top: calc(41% - 1px);
+  top: calc(39% - 1px);
   // z-index: 10;
   position: absolute;
   display: flex;
@@ -108,34 +108,34 @@
   }
 
   @include vp-1365 {
-    top: calc(44% - 1px);
+    top: calc(39% - 1px);
   }
 
   @include vp-767 {
-    top: calc(43% + 4px);
+    top: calc(40% + 4px);
   }
 
   &--prev {
-    left: -57px;
+    left: -77px;
 
     @include vp-1365 {
-      left: -57px;
+      left: -70px;
     }
 
     @include vp-767 {
-      left: -30px;
+      left: -52px;
     }
   }
 
   &--next {
-    right: -57px;
+    right: -77px;
 
     @include vp-1365 {
-      right: -50px;
+      right: -70px;
     }
 
     @include vp-767 {
-      right: -30px;
+      right: -52px;
     }
   }
 }

@@ -2,8 +2,8 @@ import Swiper from '../../vendor/swiper';
 
 export const jurySwiper = new Swiper('.slider', {
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
+    nextEl: '.jury__slider-button--next',
+    prevEl: '.jury__slider-button--prev',
   },
   loop: true,
   breakpoints: {

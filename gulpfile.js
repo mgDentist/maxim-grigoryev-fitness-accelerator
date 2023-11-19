@@ -11,6 +11,11 @@ const streamStyles = () => compileStyles().pipe(server.stream());
 
 const clean = () => del('build');
 
+const copyFaviconAndManifest = () => {
+  return gulp.src(['source/favicon.ico', 'source/site.webmanifest'])
+    .pipe(gulp.dest('build'));
+};
+
 const syncServer = () => {
   server.init({
     server: 'build/',
@@ -39,8 +44,8 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
-const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
-const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
+const build = gulp.series(clean, copy, copyFaviconAndManifest, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
+const dev = gulp.series(clean, copy, copyFaviconAndManifest, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
+const start = gulp.series(clean, copy, copyFaviconAndManifest, sprite, gulp.parallel(compileStyles, compileMainScripts, compileVendorScripts), syncServer);
 
 export { createWebp as webp, build, start, dev};

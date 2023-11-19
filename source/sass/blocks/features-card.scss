@@ -1,40 +1,40 @@
 .features-card {
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 
-  @include vp-1365 {
-    gap: 15px;
-  }
+  // @include vp-1365 {
+  //   gap: 15px;
+  // }
 
-  @include vp-767 {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
+  // @include vp-767 {
+  //   flex-direction: column;
+  //   gap: 12px;
+  //   align-items: center;
+  // }
 
   &--other {
-    margin-top: 4px;
-    padding: 70px 34px 80px;
-    flex-direction: column;
-    gap: 34px;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-darken-blue;
+    // margin-top: 4px;
+    // padding: 70px 34px 80px;
+    // flex-direction: column;
+    // gap: 34px;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: $color-darken-blue;
 
-    @include vp-1365 {
-      width: fit-content;
-      margin-top: 0;
-      padding: 35px 95px 35px;
-      justify-self: center;
-      gap: 25px;
-    }
+    // @include vp-1365 {
+    //   width: fit-content;
+    //   margin-top: 0;
+    //   padding: 35px 95px 35px;
+    //   justify-self: center;
+    //   gap: 25px;
+    // }
 
-    @include vp-767 {
-      width: 100%;
-      margin: 2px 0 6px;
-      padding: 30px 28px 39px;
-      gap: 20px;
-    }
+    // @include vp-767 {
+    //   width: 100%;
+    //   margin: 0;
+    //   padding: 30px 28px 39px;
+    //   gap: 20px;
+    // }
   }
 }
 
@@ -46,7 +46,7 @@
 
   @include vp-767 {
     text-align: center;
-    padding-left: 3px;
+    // padding-left: 3px;
   }
 
   &--other{
@@ -61,7 +61,7 @@
 
   @include vp-767 {
     text-align: center;
-    padding-left: 3px;
+    // padding-left: 3px;
   }
 
   &--square-mobile {
@@ -95,6 +95,7 @@
   @include vp-1365 {}
 
   @include vp-767 {
+    // margin-right: 4px;
     font-size: 64px;
     line-height: 64px;
   }
@@ -133,7 +134,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
   }
 }
@@ -183,9 +184,9 @@
     font-size: 18px;
   }
 
-  &--margin-mobile {
+  &--parking {
     @include vp-767 {
-      margin-bottom: 6px;
+      margin-bottom: 13px;
     }
   }
 }

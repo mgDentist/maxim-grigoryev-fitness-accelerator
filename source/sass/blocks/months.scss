@@ -1,6 +1,6 @@
 .months {
   position: relative;
-  padding-top: 34px;
+  padding-top: 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +26,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    bottom: -13px;
+    bottom: -12px;
     left: 0;
     right: 0;
     background-color: $color-soft-grey;
@@ -45,7 +45,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    bottom: -13px;
+    bottom: -12px;
     left: 0;
     right: 0;
     background-color: $color-transparent;
@@ -64,7 +64,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      bottom: -13px;
+      bottom: -12px;
       left: 0;
       right: 0;
       background-color: $color-torch-red;
@@ -89,7 +89,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    bottom: -13px;
+    bottom: -12px;
     left: 0;
     right: 0;
     background-color: $color-transparent;
@@ -112,7 +112,7 @@
       content: "";
       position: absolute;
       height: 2px;
-      bottom: -13px;
+      bottom: -12px;
       left: 0;
       right: 0;
       background-color: $color-torch-red;

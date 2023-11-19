@@ -1,6 +1,6 @@
 .abonements {
   position: relative;
-  padding: 126px 0;
+  padding: 126px 0 120px;
   text-align: center;
   background-color: $color-background-grey;
 
@@ -74,7 +74,7 @@
   height: 494px;
   position: absolute;
   right: 0;
-  bottom: -144px;
+  bottom: -150px;
 
   @include vp-1365 {
     width: 327px;

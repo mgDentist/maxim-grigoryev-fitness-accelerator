@@ -19,12 +19,12 @@
   background-color: $color-shine-red;
 
   @include vp-1365 {
-    width: 292px;
-    padding: 40px 45px 45px;
+    width: 290px;
+    padding: 40px 43px 45px;
   }
 
   @include vp-767 {
-    padding: 39px 41px 39px 41px;
+    padding: 39px 39px 39px 39px;
   }
 }
 

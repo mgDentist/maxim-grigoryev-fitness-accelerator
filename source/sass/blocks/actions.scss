@@ -1,7 +1,6 @@
 .actions {
   padding: 120px 0 120px;
 
-
   @include vp-1365 {
     padding: 100px 0 100px;
   }
@@ -39,6 +38,7 @@
 
 .actions__wrapper {
   display: flex;
+  justify-content: center;
   gap: 40px;
 
   @include vp-1365 {
@@ -58,7 +58,9 @@
 
   @include vp-1365 {}
 
-  @include vp-767 {}
+  @include vp-767 {
+    justify-content: center;
+  }
 }
 
 .actions__text-block {
@@ -185,6 +187,7 @@
 
 .actions__list {
   flex-grow: 1;
+  max-width: 700px;
 
   @include vp-1365 {
     flex-grow: 0;

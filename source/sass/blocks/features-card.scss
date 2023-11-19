@@ -1,0 +1,223 @@
+.features-card {
+  display: flex;
+  gap: 30px;
+
+  @include vp-1365 {
+    gap: 15px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  &--other {
+    margin-top: 4px;
+    padding: 70px 34px 80px;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-darken-blue;
+
+    @include vp-1365 {
+      width: fit-content;
+      margin-top: 0;
+      padding: 35px 95px 35px;
+      justify-self: center;
+      gap: 25px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      margin: 2px 0 6px;
+      padding: 30px 28px 39px;
+      gap: 20px;
+    }
+  }
+}
+
+.features-card__measure {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    text-align: center;
+    padding-left: 3px;
+  }
+
+  &--other{
+    @include vp-767 {
+      padding-left: 0;
+    }
+  }
+}
+
+.features-card__text {
+  @include vp-1365 {}
+
+  @include vp-767 {
+    text-align: center;
+    padding-left: 3px;
+  }
+
+  &--square-mobile {
+    @include vp-767 {
+      width: 160px;
+    }
+  }
+
+  &--places-mobile {
+    @include vp-767 {
+      width: 183px;
+    }
+  }
+
+  &--cars-mobile {
+    @include vp-767 {
+      width: 226px;
+    }
+  }
+}
+
+.features-card__number {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  background: linear-gradient(142deg, #D10A42 0%, #0041CA 88.2%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  &--128deg {
+    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    @include vp-1365 {}
+
+    @include vp-767 {}
+  }
+
+  &--143deg {
+    background: linear-gradient(143deg, #D10A42 0%, #0041CA 87.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    @include vp-1365 {}
+
+    @include vp-767 {}
+  }
+
+  &--other {
+    margin-bottom: 12px;
+    margin-left: 3px;
+    background: $color-default-white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+
+    @include vp-1365 {
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+
+    @include vp-767 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.features-card__number-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-neon-blue;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    line-height: 20px;
+  }
+
+  &--other {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $color-default-white;
+
+    @include vp-1365 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+}
+
+.features-card__title {
+  margin-bottom: 7px;
+  font-size: 22px;
+  line-height: 22px;
+
+  @include vp-1365 {
+    margin-bottom: 11px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+
+  &--margin-mobile {
+    @include vp-767 {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.features-card__description {
+  font-weight: 300;
+  line-height: 24px;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &--other {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-default-white;
+    text-align: center;
+
+    @include vp-1365 {
+      max-width: 210px;
+    }
+
+    @include vp-767 {
+      max-width: 172px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+  }
+}

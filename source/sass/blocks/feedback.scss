@@ -1,0 +1,141 @@
+.feedback {
+  padding: 120px 0 120px;
+
+  @include vp-1365 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.feedback__main-title {
+  margin-bottom: 46px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  @include vp-1365 {
+    margin-bottom: 42px;
+    padding-right: 1px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 46px;
+    padding-right: 2px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.feedback-wrapper {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+.feedback__slider-wrapper {
+  max-width: 560px;
+
+
+  @include vp-1365 {
+    max-width: 580px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+  }
+}
+
+.feedback__list {
+
+  @include vp-1365 {}
+
+  @include vp-767 {}
+}
+
+.feedback__svg-arrow {
+  stroke: $color-default-blue;
+  width: 16px;
+  height: 32px;
+
+  @include vp-1365 {}
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.feedback__button {
+  width: 56px;
+  height: 56px;
+  top: calc(39% - 1px);
+  // z-index: 10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-transparent;
+  border: 1px solid $color-transparent;
+  border-radius: 50%;
+
+  @include hover-focus {
+    border: 1px solid $color-default-blue;
+  }
+
+  @include active {
+    background-color: $color-default-blue;
+
+    & .feedback__svg-arrow {
+      stroke: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-1365 {
+    top: calc(39% - 1px);
+  }
+
+  @include vp-767 {
+    top: calc(40% + 4px);
+  }
+
+  &--prev {
+    left: -77px;
+
+    @include vp-1365 {
+      left: -70px;
+    }
+
+    @include vp-767 {
+      left: -52px;
+    }
+  }
+
+  &--next {
+    right: -77px;
+
+    @include vp-1365 {
+      right: -70px;
+    }
+
+    @include vp-767 {
+      right: -52px;
+    }
+  }
+}

@@ -98,10 +98,6 @@
   @include vp-1365 {
   margin-right: 0;
   }
-
-  @include vp-767 {
-
-  }
 }
 
 .cards__description {
@@ -142,8 +138,6 @@
   line-height: 150%;
   color: $color-light-blue;
 
-  @include vp-1365 {}
-
   @include vp-767 {
     margin-right: 11px;
     font-size: 48px;
@@ -162,8 +156,6 @@
   color: $color-text-grey;
   opacity: 0.48;
 
-  @include vp-1365 {}
-
   @include vp-767 {
     top: -44px;
     left: -15px;
@@ -177,8 +169,6 @@
   height: 42px;
   position: relative;
   margin-left: -3px;
-
-  @include vp-1365 {}
 
   @include vp-767 {
     width: 24px;
@@ -210,8 +200,8 @@
 
   @include hover-focus {
     color: $color-default-white;
-    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: $red-to-blue;
+    border-image: $red-to-blue;
     border-image-slice: 1;
     outline: none;
   }
@@ -227,8 +217,8 @@
 
   &--colored {
     color: $color-default-white;
-    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: $red-to-blue;
+    border-image: $red-to-blue;
     border-image-slice: 1;
   }
 }

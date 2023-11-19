@@ -19,12 +19,24 @@ $color-dark-blue:                   #00359f;
 $color-darken-blue:                 #1c3374;
 $color-soft-blue:                   rgba(16, 38, 84, 0.50);
 $color-torch-red:                   #d10a42;
+$color-torch-red-2:                 #ff1420;
 $color-shine-red:                   #ed0233;
 $color-soft-grey:                   rgba(120, 120, 120, 0.20);
 $color-background-grey:             #f8f9fc;
 $color-text-grey:                   #e8e8e8;
-// Gradient
+$light-slate-grey:                  #74819c;
+$sapphire:                          rgba(16, 38, 86, 0.2);
+$sapphire-2:                        rgba(16, 38, 84, 0.20);
+$sapphire-3:                        rgba(16, 38, 84, 0.89);
+$link-water:                        #c8c9cc;
+$resolution-blue:                   rgba(28, 51, 116, 0.20);
+$crimson:                           rgba(209, 10, 66, 0.20);
+$gulf-blue:                         rgba(42, 59, 99, 0.17);
+$spindle:                           #b6bdcc;
 
+// Gradient
+$main-gradient:                     linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+$red-to-blue:                       linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography

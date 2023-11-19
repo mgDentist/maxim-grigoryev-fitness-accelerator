@@ -15,24 +15,6 @@
   }
 }
 
-.slider__list {
-  // text-align: center;
-  // width: fit-content;
-
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // gap: 40px;
-
-  @include vp-1365 {
-    // gap: 32px;
-  }
-
-  @include vp-767 {
-    // gap: 0;
-  }
-}
-
 .slider__item {
   position: relative;
   justify-content: center;
@@ -47,10 +29,6 @@
       display: none;
     }
   }
-
-  @include vp-1365 {}
-
-  @include vp-767 {}
 }
 
 .slider__text {

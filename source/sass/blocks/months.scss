@@ -51,12 +51,6 @@
     background-color: $color-transparent;
   }
 
-  @include vp-1365 {
-  }
-
-  @include vp-767 {
-  }
-
   &--active {
     color: $color-default-blue;
 
@@ -68,9 +62,6 @@
       left: 0;
       right: 0;
       background-color: $color-torch-red;
-
-      @include vp-1365 {
-      }
 
       @include vp-767 {
         bottom: -17px;
@@ -117,16 +108,9 @@
       right: 0;
       background-color: $color-torch-red;
 
-
-      @include vp-1365 {
-      }
-
       @include vp-767 {
         bottom: -17px;
       }
     }
-  }
-
-  @include active {
   }
 }

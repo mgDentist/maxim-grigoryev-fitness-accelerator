@@ -1,52 +1,9 @@
-.features-card {
-  // display: flex;
-  // gap: 30px;
-
-  // @include vp-1365 {
-  //   gap: 15px;
-  // }
-
-  // @include vp-767 {
-  //   flex-direction: column;
-  //   gap: 12px;
-  //   align-items: center;
-  // }
-
-  &--other {
-    // margin-top: 4px;
-    // padding: 70px 34px 80px;
-    // flex-direction: column;
-    // gap: 34px;
-    // align-items: center;
-    // justify-content: center;
-    // background-color: $color-darken-blue;
-
-    // @include vp-1365 {
-    //   width: fit-content;
-    //   margin-top: 0;
-    //   padding: 35px 95px 35px;
-    //   justify-self: center;
-    //   gap: 25px;
-    // }
-
-    // @include vp-767 {
-    //   width: 100%;
-    //   margin: 0;
-    //   padding: 30px 28px 39px;
-    //   gap: 20px;
-    // }
-  }
-}
-
 .features-card__measure {
   display: flex;
   flex-direction: column;
 
-  @include vp-1365 {}
-
   @include vp-767 {
     text-align: center;
-    // padding-left: 3px;
   }
 
   &--other{
@@ -57,11 +14,9 @@
 }
 
 .features-card__text {
-  @include vp-1365 {}
 
   @include vp-767 {
     text-align: center;
-    // padding-left: 3px;
   }
 
   &--square-mobile {
@@ -95,7 +50,6 @@
   @include vp-1365 {}
 
   @include vp-767 {
-    // margin-right: 4px;
     font-size: 64px;
     line-height: 64px;
   }
@@ -104,20 +58,12 @@
     background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
     background-clip: text;
     -webkit-background-clip: text;
-
-    @include vp-1365 {}
-
-    @include vp-767 {}
   }
 
   &--143deg {
     background: linear-gradient(143deg, #D10A42 0%, #0041CA 87.33%);
     background-clip: text;
     -webkit-background-clip: text;
-
-    @include vp-1365 {}
-
-    @include vp-767 {}
   }
 
   &--other {
@@ -143,8 +89,6 @@
   font-size: 14px;
   line-height: 22px;
   color: $color-neon-blue;
-
-  @include vp-1365 {}
 
   @include vp-767 {
     line-height: 20px;

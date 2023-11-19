@@ -5,7 +5,7 @@
   padding: 60px;
   color: $color-default-white;
   background-color: $color-darken-blue;
-  box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.20);
+  box-shadow: 0px 0px 40px 0px $resolution-blue;
 
   @include vp-1365 {
     width: 580px;
@@ -23,8 +23,6 @@
 
 .feedback-card__image {
   max-width: 80px;
-
-  @include vp-1365 {}
 
   @include vp-767 {
     max-width: 68px;
@@ -66,8 +64,6 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-
-  @include vp-1365 {}
 
   @include vp-767 {
     font-size: 14px;

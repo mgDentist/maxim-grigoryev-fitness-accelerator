@@ -3209,6 +3209,10 @@ fieldset {
 @media (max-width: 1365px) {
   .cards {
     padding-top: 58px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 40px;
   }
 }
